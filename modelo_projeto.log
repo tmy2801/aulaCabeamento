@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.9)  17 FEB 2019 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.9)  27 FEB 2019 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,13 +1118,10 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15
 
  [3
 
-]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
- [4
+] [4
 
-] (./tab1.tex
-<fig1.png, id=27, 608.2725pt x 423.5825pt>
+] [5] (./tab1.tex
+<fig1.png, id=30, 608.2725pt x 423.5825pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 8.
@@ -1133,13 +1130,13 @@ File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 9.
 (pdftex.def)             Requested size: 121.65234pt x 84.715pt.
-) [5 <./fig1.png>]
-Overfull \hbox (84.47485pt too wide) in paragraph at lines 248--253
+) [6 <./fig1.png>]
+Overfull \hbox (84.47485pt too wide) in paragraph at lines 265--270
 []\OT1/cmr/m/n/12 (-20) Segue uma rela^^Xc~ao de fer-ra-men-tas: http://asana.c
 om/, https://trello.com/, http://www.ganttproject.biz/,
  []
 
-[6] (./modelo_projeto.bbl
+(./modelo_projeto.bbl
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -1148,48 +1145,51 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-) [7] (./tab2.tex)
+[7])
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 319.
+ (./tab2.tex) [8]
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 332.
+Package pdftex.def Info: fig1.png  used on input line 349.
 (pdftex.def)             Requested size: 455.24417pt x 317.02682pt.
-<fig2.png, id=43, 214.8025pt x 516.93124pt>
+<fig2.png, id=46, 214.8025pt x 516.93124pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 340.
+Package pdftex.def Info: fig2.png  used on input line 357.
 (pdftex.def)             Requested size: 214.80197pt x 516.92998pt.
-<fig3.jpg, id=44, 533.5935pt x 361.35pt>
+<fig3.jpg, id=47, 533.5935pt x 361.35pt>
 File: fig3.jpg Graphic file (type jpg)
 <use fig3.jpg>
-Package pdftex.def Info: fig3.jpg  used on input line 349.
+Package pdftex.def Info: fig3.jpg  used on input line 366.
 (pdftex.def)             Requested size: 672.24995pt x 455.24417pt.
  
 AED: lastpage setting LastPage
-[8] [9] [10 <./fig2.png>] [11 <./fig3.jpg>] (./modelo_projeto.aux) ) 
+[9] [10 <./fig2.png>] [11 <./fig3.jpg>] (./modelo_projeto.aux) ) 
 Here is how much of TeX's memory you used:
- 11631 strings out of 494903
- 184689 string characters out of 6179962
- 500915 words of memory out of 5000000
- 14626 multiletter control sequences out of 15000+600000
- 26987 words of font info for 99 fonts, out of 8000000 for 9000
+ 11642 strings out of 494903
+ 184775 string characters out of 6179962
+ 501915 words of memory out of 5000000
+ 14627 multiletter control sequences out of 15000+600000
+ 27232 words of font info for 104 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  54i,13n,77p,8825b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share
-/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssb
-x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb>
-Output written on modelo_projeto.pdf (11 pages, 1930813 bytes).
+{/usr/share/tex
+live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvro8a.pfb>
+Output written on modelo_projeto.pdf (11 pages, 1932998 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
