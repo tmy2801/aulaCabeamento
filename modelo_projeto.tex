@@ -22,7 +22,7 @@
 \usepackage{booktabs}												% Nicer tables
 \usepackage{fix-cm}													% Custom fontsizes
 \usepackage[utf8]{inputenc}
-\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1cm, right=1cm]{geometry}
 \usepackage[ddmmyyyy]{datetime}
 \addto\captionsenglish{%
 	\renewcommand\tablename{Tabela}
@@ -169,23 +169,21 @@ A empresa atualmente está transitando para uma nova instalação, com estrutura
 
 O quadro de funcionários conta com 8 funcionários, divididos nas áreas de pessoa física, pessoa jurídica, gerência e arquivo morto. Os equipamentos de TI são constituídos em 9 computadores, 1 roteador, 1 switch e 2 impressoras. 
 
-O escopo do projeto constitui a instalação física de toda a parte do cabeamento e equipamentos de TI, além de sua configuração, documentação completa e testes funcionais, isentando da realização da certificação.
+O escopo do projeto constitui a instalação física de toda a parte do cabeamento e equipamentos de TI, além de sua configuração, documentação completa, testes funcionais e a realização da certificação.
 
-A expansão da empresa não será maior que 30 computadores.
+A expansão prevista da empresa não será maior que 30 computadores.
 
 \subsection{Benefícios}
 Os benefícios com a introdução de uma estrutura de cabeamento estruturado resultará em maior estabilidade para a rede, além da facilidade na manutenção, segurança para os funcionários e clientes, a possibilidade da execução de aplicativos de forma remota e o aumento do desempenho das atividades da empresa. 
 
 \subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
+As organizações envolvidas no projeto de cabeamento estruturado são apresentadas na tabela \ref{tab7} abaixo:
 
-Sugestão: crie uma tabela contento a relação delas.
-
-
+\input{tab7.tex}
 
 \section{Estado atual}
 
-Atualmente o estado da rede é composta por uma pequena estrutura, constituindo de 1 roteador, 9 computadores, 1 switch e os cabos cat5 para a conexão entre os equipamentos de TI.
+Atualmente o estado da rede é composta por uma pequena estrutura, constituindo de 1 roteador, 9 computadores, 1 switch, 2 impressoras e os cabos cat5 para a conexão entre os equipamentos de TI.
 
 As principais reclamações dos funcionários baseiam-se nos problemas quanto a estabilidade da conexão. Muitos dos aplicativos utilizados sofrem com a queda da conexão e dessa forma gerando transtornos para a finalização dos serviços. Além disso a manutenção é dificultada por não possuir uma estrutura organizada.
 
@@ -206,7 +204,7 @@ Os requisitos do projeto são:
 6- Serviço de acesso remoto para uso de aplicativos.
 
 \section{Usuários e Aplicativos}
-A situação atual da empresa consiste no quadro de 8 funcionários, todos com computadores individuais e 2 impressoras. A estimativa da empresa que o número de funcionários possa crescer com a mudança de estrutura predial e de rede, por essa razão o projeto prevê a distribuição de 30 pontos de rede para suprir a demanda futura. 
+A situação atual da empresa consiste no quadro de 8 funcionários, todos com computadores individuais. A estimativa com à mudança de prédio, é contratar até 4 funcionários para as novas necessidades. Além disso, para uma demanda futura, a empresa prevê à contratação de estagiários para compor o quadro de funcionários. Considerando a evolução prevista, o projeto prevê a instalação de no máximo 60 pontos de rede, além da compra de 3 servidores, 4 switches, 4 patch panels , 4 computadores, 2 roteadores wifi e 1 impressora, para a atual mudança de prédio.
 
 \subsection{Usuários}
 Os perfis de usuário são compostos por 8 funcionários, divididos em dois para o escritório de gerência, um para o arquivo morto, dois para o escritório de pessoa física e mais dois no de pessoa jurídica.
@@ -218,159 +216,197 @@ Os aplicativos utilizados pelo escritório com uso intenso são:
 
 - Aplicativos destinados a declaração para Receita Federal, Receita Estadual, Municipais e para declarações trabalhistas.
 
-Os demais aplicativos utilizados pelo escritório são de uso normal, com navegadores de internet.
+Os demais aplicativos utilizados pelo escritório são de uso tradicional, como navegadores de internet.
 
 
 \section{Estrutura predial existente}
+A nova estrutura predial é apresentado na figura \ref{fisica1} abaixo. O prédio apresenta uma área total de 261.9 metros quadrados, possuindo as seguintes divisões na estrutura: sala de telecomunicações, com 10.5 metros quadrados; sala de equipamentos, com 18.6 metros quadrados; escritório de gerência, com 38.25 metros quadrados; escritório de pessoa física, com 51 metros quadrados; escritório de pessoa jurídica, com 59.5 metros quadrados; arquivo morto, com 34 metros quadrados e a recepção, com 24.25 metros quadrados. Todas as salas serão interligadas através do corredor, iniciando a partir da recepção, possuindo 25.8 metros quadrados de área.
 
-O prédio de acordo com a planta física, é composto por um sobrado, possuindo na parte térrea três salas, uma destinada a sala de TI, contendo 12 metros quadrados, uma para o escritório de pessoa jurídica, possuindo 28 metros quadrados e um escritório de pessoa física, contendo 36 metros quadrados.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.23]{fisica1}
+	\caption{Planta Física do prédio.}
+	\label{fisica1}
+\end{figure} 
 
-Na parte superior do prédio, encontra-se as salas de gerência e de arquivo morto, ambas possuindo 38 metros quadrados. O prédio todo conta com uma estrutura projetada para atender a demanda de um projeto de cabeamento estruturado, disponibilizando eletrodutos para o alojamento dos cabos de rede. Além disso, a estrutura predial disponibiliza os painéis para alocar os Patch Panel.
+O projeto abrange uma estrutura que disponibilizará eletrodutos para o alojamento dos cabos de rede através das paredes e os compartimentos para os pontos de rede. Além disso, a estrutura predial utiliza teto falso entre a laje, facilitando o uso de eletrocalhas para a distribuição do cabeamento de rede.
 
-As possíveis distancias entre os pontos de rede não ultrapassarão 1 metro.
+As distancias entre os pontos de rede podem variar entre 1 a 3 metros de distância.
+
 \section{Planta Lógica - Elementos estruturados}
 
 \subsection{Estado atual}
-Deve ter a planta atual, se for o caso
+O estado atual da rede encontra-se composta por 9 computadores, 1 switch de 100 megabits, 1 roteador e o cabeamento utilizando cabos cat5. Os equipamentos como switch e roteador estão alocados em um mini rack fixado na parede do escritório. Como não foi utilizado calhas ou eletrodutos, os cabos foram distribuídos de forma aleatória de acordo com a posição de cada computador, percorrendo desde eletrodutos compartilhados com fios de energia elétrica ou espalhados pelo piso do escritório.
+
+Com a mudança de prédio, apenas os equipamentos como computadores e as impressoras serão aproveitados no novo projeto de cabeamento estruturado, os demais itens, como os cabos, serão descartados, pela necessidade de utilizar equipamentos mais modernos.
 
 \subsection{Topologia}
-Proposta futura, proposta após implantação.
-Deve conter o diagrama da rede. Atente-se a redundância  e ligações truncadas.
-Deve explicar todos termos e componentes utilizados nestas plantas. Por exemplo: entrance facility, work area, horizontal cabling, etc..
+A sala de TI, no qual é divida em sala de telecomunicações e em sala de equipamentos, localizam-se todos os dispositivos como modem, switches, patch panels, servidores e os racks. A recepção de internet, ilustrado no diagrama da figura \ref{diagrama1} será realizada pelo modem e em seguida para um servidor, no qual contém os serviços de proxy, dhcp, dns e active directory. Logo após, a próxima conexão será com o switch 1 ou central, este por usa vez será responsável pela conexão aos servidores de aplicação e backup, além dos switches posteriores, compondo uma topologia de rede em formato estrela. Os demais switches realizarão as conexões dos computadores situados em cada sala do prédio:
+\begin{itemize}
+	\item Switch 2: é encarregado da conexão dos computadores e impressora do escritório de gerência;
+	\item Switch 3: é encarregado da conexão dos computadores, impressora e roteador sem fio do escritório de pessoa física;
+	\item Switch 4: é encarregado da conexão dos computadores, impressora, roteador sem fio do escritório de pessoa jurídica, além do mais, da sala de arquivo morto e a recepção.
+\end{itemize}
 
-Todos os elementos das figuras devem ser explicados. 
-Crie esboço da configuração dos racks e brackets. Explique cada um dos componentes. Você pode criar uma tabela contendo figuras dentro, ou criar uma tabela e incluí-la como imagem. Por exemplo, verifique a tabela \ref{tab1}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.45]{diagrama1}
+	\caption{Diagrama de rede.}
+	\label{diagrama1}
+\end{figure}
 
-\input{tab1}
+A figura \ref{desenho1} a seguir demonstra à distribuição física da rede pela estrutura do prédio. A conexão entre a rede externa e a interna é realizada por meio da entrada da edificação(facilidades de entrada), utilizando um armário de telecomunicações para abrigar os cabos da concessionária de internet, localizados na  sala de telecomunicações.
+
+O cabeamento será todo realizado em cabos UTP categoria 6. Os switches serão todos conectados por patch cords aos patch panels, implementados em um rack. Para à conexão com as áreas de trabalhos da empresa, o projeto prevê à aplicação do sistema de cabeamento horizontal, este por sua vez, responsável pela ligação entre o patch panel e o ponto de telecomunicação específico, que no total somam 57 tomadas de rede, de acordo com o projeto estrutural do prédio.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.22]{desenho1}
+	\caption{Diagrama da distribuição física de rede.}
+	\label{desenho1}
+\end{figure}
+
+\newpage
+A sala de telecomunicações abrigará um rack para alojar os switches, os patch panels e o modem de internet na seguinte configuração da figura \ref{rack2}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{rack2}
+	\caption{Rack de telecomunicações.}
+	\label{rack2}
+\end{figure}
+
+\newpage
+A sala de equipamentos abrigará um rack para alojar o servidor de proxy, juntamente com os serviços de dhcp, dns e active directory. Bem como, os servidores de aplicação e backup, apresentados na configuração da figura  \ref{rack1}.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{rack1}
+	\caption{Rack de equipamentos.}
+	\label{rack1}
+\end{figure}
 
 \subsection{Encaminhamento}
-Eletrodutos, calhas, e qualquer material em que os cabos serão alojados/alocados.
+O encaminhamento dos cabos será por eletrocalhas e eletrodutos, a eletrocalha fará à distribuição dos cabos pelas salas do prédio, iniciando-se desde a sala de telecomunicações, deslocando por aberturas entre as paredes dos cômodos, percorrendo através de um teto falso até a sala de recepção. 
+
+A eletrocalha será instalada próxima a parede que contém as janelas, os eletrodutos verticais, instalados dentro das paredes, serão responsáveis pela conexão até o pequeno quadro de distribuição embutido na parede e este por sua vez será conectado aos eletrodutos horizontais, percorrendo os cabos para seus respectivos pontos de telecomunicações na sala.
 
 \subsection{Memorial descritivo}
 
-Relacione todos os equipamentos passivos que serão utilizados, tipo, fabricante, quantidade.
+A tabela \ref{tab3} abaixo relaciona todos os equipamentos necessários para a nova rede, a marca, o modelo e a quantidade de ambos.
+
+\input{tab3.tex} 
+\newpage
 
 \subsection{Identificação dos cabos}
-Explique como os cabos serão identificados em seu projeto. Coloque uma relação dos cabos instalados e identificados.
+Para criar a identificação dos cabos de rede, foi utilizado a seguinte nomenclatura, demonstrada na figura \ref{identificacaorede}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{identificacaorede}
+	\caption{Nomenclatura da identificação dos cabos.}
+	\label{identificacaorede}
+\end{figure}
+
+No switch 1, a linha "5 x CSU 4P" significa que a quantidade de cabos é 5, o cabo é secundário do tipo UTP e conta com 4 pares no fio. A linha "01 01 a 05" exibe qual área do prédio será instalado o cabeamento, no caso 01 e quais pontos de telecomunicações serão atendidos, no qual serão de 01 a 05. As demais nomenclaturas seguem a mesma lógica para a identificação do cabeamento por cada sala do prédio.
+
+Além de identificação dos cabos por área do prédio, a nomenclatura de cada cabo em seu respectivo ponto de telecomunicações é dada pelas tabelas \ref{tab5} e \ref{tab6} abaixo.
+
+\newpage
+\input{tab5.tex}
+
+A identificação no caso de "CSU0101", corresponde a cabo de rede secundário, do tipo UTP, da sala 01 do prédio e o ponto de telecomunicações 01. As demais identificações seguem a mesma lógica, diferenciando as salas e os pontos de telecomunicações.
+
+\input{tab6.tex}
 
 \section{Implantação}
-Estabeleça um cronograma de implantação:
-Remoção de equipamentos existentes (destino para descarte), instalação dos condutores, instalação dos cabos, 
-identificação dos cabos, montagem dos racks, certificação, etc... Crie atividades e estabeleça o tempo de execução. Se for um projeto real, indique também quais os responsáveis pela execução do projeto e de cada uma das etapas.
+Para uma implantação organizada da rede, o cronograma da figura abaixo apresentará todas as etapas e a duração para a execução do projeto.
 
-Defina marcas (e padrões) e fornecedores se for o caso. Atenção a contratados e subcontratados para a realização das atividades. Estabeleça a responsabilidade de execução da atividade e também da validação dela.
+\newpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[height=\textwidth,angle=-90,scale=0.565]{crono}
+	\caption{Cronograma para a execução do projeto.}
+	\label{crono}
+\end{figure}
 
-Utilize algum software para gerear o cronograma. Excel,etc. O fundamental é dividir em etapas, descrever e estimar o tempo de cada uma delas.
-
-Segue uma relação de ferramentas:
-http://asana.com/, 
-https://trello.com/, 
-http://www.ganttproject.biz/, 
-http://www.orangescrum.org/. 
 
 \section{Plano de certificação}
-Quais seriam as etapas para a certificação? 
-Quais os locais e horários para execução da certificação na rede? Toda rede será certificada?
-Como os testes seriam executados?
-Quais relatórios de certificação serão (ou deveriam ser) entregues? 
+Para a rede ser totalmente certificada, os canais e links serão testados eletricamente para atender a norma TIA-568-C.2. Os testes para o cabeamento metálico serão realizados com um aparelho certificador de rede.
+
+Os testes serão:
+\begin{itemize}
+	\item Continuidade e sequência;
+	\item Comprimento;
+	\item Atenuação;
+	\item NEXT - Paradiafonia - Near End CrossTalk;
+	\item PSNEXT - Soma da paradiafonia - Power Sum NEXT;
+	\item ELFEXT - Telediafonia - Equal Level Far - End CrossTalk;
+	\item PSELFEXT - Somatória da telediafonia - Power Sum ELFEXT;
+	\item Perda de retorno;
+	\item Retardo do grupo ou tempo de atraso;
+	\item Dispersão de atraso.	
+\end{itemize}
+A certificação será realizada após o término dos serviços prestados pela empresa contratada, dessa maneria a estrutura da rede estará completa, próximo do que seria em operação real. Para uso de parâmetro, a figura \ref{certificacao} abaixo indica os valores corretos para cada teste.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{certificacao}
+	\caption{Valores em DB para referência nos testes.}
+	\label{certificacao}
+\end{figure}
+
+O relatório da certificação será composto pelos testes de cada item apresentado, de maneira à apresentar a aprovação ou não do cabeamento estruturado e as correções necessárias para o correto funcionamento da rede.
 
 \section{Plano de manutenção}
 
-Revisões periódicas na rede, emissão de certificados para novos pontos.
+A empresa cliente optou por não contratar as revisões periódicas na estrutura, somente a necessidade de atendimento para eventuais problemas na rede e o contrato com a empresa contratante para o gerenciamento de servidores, computadores e impressoras.
 
 \subsection{Plano de expansão}
-Existe um plano de expansão? Quantos novos pontos poderão ser acrecidos na rede, antes de migração de equipamentos na camada 2? Se houver expansão, quais equipamentos deverão ser direcionados para as estremidades da rede? 
+
+A empresa apresentou nenhum plano para a expansão da estrutura de rede.
 
 \section{Risco}
-Enumerar e explicar os riscos do projeto.
+Os riscos do projeto que podem afetar a estrutura são:
+
+\begin{itemize}
+	\item Perda de dados: podem ocorrer por algum desligamento não programado dos servidores;
+	\item Incêndio em data center: por alguma falha elétrica poderá acarretar em inicio de chamas na sala de TI;
+	\item Colaboradores não autorizados: por acesso não definido de usuários podem comprometer a segurança dos dados.
+\end{itemize}
+
 
 \section{Orçamento}
-Crie uma relação de orçamentos baseado na seções anteriores.
+Os orçamentos serão divididos em dois, um para os serviços necessários para o cabeamento estruturado da empresa e um de equipamentos para a rede. As tabelas \ref{tab9} e \ref{tab8} apresentam os valores do orçamento.
 
+
+\input{tab9.tex}
+\newpage
+\input{tab8.tex}
+
+Apresentados os valores, a tabela \ref{tab10} à seguir contém o orçamento total:
+
+\input{tab10.tex}
+
+\newpage
 \section{Recomendações}
-Observações e recomendações para o cliente.
+Segue a lista abaixo com algumas recomendações para o correto funcionamento da estrutura de rede:
+
+\begin{itemize}
+	\item Manter a sala de TI refrigerada;
+	\item Uso de câmeras para a segurança da sala de TI;
+	\item Agendamentos periódicos para a manutenção da rede e equipamentos de informática.
+\end{itemize}
 
 \section{Referências bibliográficas}
-Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
-
-Exemplo: Redes de computadores, segundo \cite{t2013} é considerada..... Já \cite{kurose2010} apresenta uma versão...
-
-Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
-
 
 \renewcommand\refname{} %%Referências bibliográficas}  
 \bibliographystyle{ieeetr}
 \bibliography{referencias}  
 
 %% ***********************************************************************
-%% === remover daqui =====================================================
-%% ***********************************************************************
-=================================================
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
-
-
-\subsection{Colocar elementos em itens}
-
-Texto antes da lista
-
-\begin{itemize}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{itemize}
-
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
-Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
-
-\input{tab2}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
-
-
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
-
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
-
-
-%% ***********************************************************************
-%% === ate aqui    =====  ================================================
+ ================================================
 %% ***********************************************************************
 
 \end{document}
